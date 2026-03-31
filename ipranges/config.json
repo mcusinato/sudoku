@@ -1,0 +1,101 @@
+{
+  "ipv4json": [
+    {
+      "url": "https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7",
+      "field": "ips"
+    },
+    {
+      "url": "https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7",
+      "field": "ips"
+    },
+    {
+      "url": "https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7",
+      "field": "ips"
+    },
+    {
+      "url": "https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7",
+      "field": "ips"
+    },
+    {
+      "url": "https://www.gstatic.com/ipranges/goog.json",
+      "root": "prefixes",
+      "field": "ipv4Prefix"
+    }
+  ],
+  "ipv4special": [
+    {
+      "range": "0.0.0.0/8",
+      "desc": "Indirizzi zero\tRFC 1700"
+    },
+    {
+      "range": "10.0.0.0/8",
+      "desc": "IP privati\tRFC 1918"
+    },
+    {
+      "range": "127.0.0.0/8",
+      "desc": "Localhost Loopback Address\tRFC 1700"
+    },
+    {
+      "range": "169.254.0.0/16",
+      "desc": "Indirizzo link local\tRFC 3330"
+    },
+    {
+      "range": "172.16.0.0/12",
+      "desc": "IP privati\tRFC 1918"
+    },
+    {
+      "range": "192.0.2.0/24",
+      "desc": "Documentation and Examples\tRFC 3330"
+    },
+    {
+      "range": "192.88.99.0/24",
+      "desc": "IPv6 to IPv4 relay Anycast\tRFC 3068"
+    },
+    {
+      "range": "192.168.0.0/16",
+      "desc": "IP privati\tRFC 1918"
+    },
+    {
+      "range": "198.18.0.0/15",
+      "desc": "Network Device Benchmark\tRFC 2544"
+    },
+    {
+      "range": "224.0.0.0/4",
+      "desc": "Multicast\tRFC 3171"
+    },
+    {
+      "range": "240.0.0.0/4",
+      "desc": "Riservato\tRFC 1700"
+    }
+  ],
+  "ipv4local": [
+    {
+      "range": "0.0.0.0/8",
+      "desc": "Indirizzi zero\tRFC 1700"
+    },
+    {
+      "range": "127.0.0.0/8",
+      "desc": "Localhost Loopback Address\tRFC 1700"
+    },
+    {
+      "range": "169.254.0.0/16",
+      "desc": "Indirizzo link local\tRFC 3330"
+    },
+    {
+      "range": "192.0.2.0/24",
+      "desc": "Documentation and Examples\tRFC 3330"
+    },
+    {
+      "range": "192.88.99.0/24",
+      "desc": "IPv6 to IPv4 relay Anycast\tRFC 3068"
+    },
+    {
+      "range": "198.18.0.0/15",
+      "desc": "Network Device Benchmark\tRFC 2544"
+    },
+    {
+      "range": "240.0.0.0/4",
+      "desc": "Riservato\tRFC 1700"
+    }
+  ]
+}

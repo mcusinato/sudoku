@@ -1,0 +1,34 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to sudoku solver</h1>
+    <p>by mkm70</p>
+</div>
+
+<div class="text-center">
+<form method="post">
+    <table align="center" style="border: 1px solid black; border-collapse: collapse;">
+    @for(var i = 0; i < 9; i++)
+    {
+        <tr>
+        @for(var j = 0; j < 9; j++)
+        {
+            var style = "width:40px; ";
+                            
+            @if(Microsoft.AspNetCore.Http.HttpMethods.IsPost(Request.Method) && (Model.gamein.matrix[i][j] >= 0 && Model.gamein.matrix[i][j] <= 9))
+            {
+                    style += "background-color:#d1d1d1; ";
+            }
+            <td><input asp-for="@Model.game.matrix[i][j]" style="@style" value="@Model.game.matrix[i][j]" /></td>
+        }
+        </tr>
+    }
+    </table>
+    @Model.Message <input value="Solve" type="submit" />
+</form>
+</div>
+

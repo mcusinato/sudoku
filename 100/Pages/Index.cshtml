@@ -1,0 +1,44 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to 100 solver</h1>
+    <p>by mkm70</p>
+</div>
+
+
+
+<div class="text-center">
+<form method="post">
+    <table align="center" style="border: 1px solid black; border-collapse: collapse;">
+    @for(var i = 0; i < 10; i++)
+    {
+        <tr style="border: 1px solid black; border-collapse: collapse;">
+        @for(var j = 0; j < 10; j++)
+        {
+            var style = "width:40px; ";                            
+            
+            <td style="border: 1px solid black; border-collapse: collapse;">
+            @if(Microsoft.AspNetCore.Http.HttpMethods.IsPost(Request.Method))
+            {
+                <div style="@style">@Model.game.matrix[i][j]</div>
+            }
+            else
+            {
+                <div style="@style">*</div>
+            }
+            </td>
+        }
+        </tr>
+    }
+    </table>
+    
+    @Model.Message
+    row(0-9):<input asp-for="@Model.row" style="width:40px; "/>
+    col(0-9):<input asp-for="@Model.col" style="width:40px; "/>
+    and ... <input value="Solve" type="submit" />
+</form>
+</div>

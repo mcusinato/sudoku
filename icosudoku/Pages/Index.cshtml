@@ -1,0 +1,34 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to icosudoku solver</h1>
+    <p>by mkm70</p>
+</div>
+
+<div class="text-center">
+<form method="post">
+    <svg width="640" height="300" xmlns="http://www.w3.org/2000/svg">
+    //draw some svg elements
+    </svg>
+    <br />
+    @Model.Message <input value="Solve" type="submit" />
+</form>
+</div>
+
+@section Scripts {
+    <script type="text/javascript" asp-append-version="true">
+    var svg = document.getElementsByTagName('svg')[0]; //Get svg element
+    draw_gui(svg,@Model.A,@Model.B,@Model.C,@Model.D,@Model.E,@Model.F,@Model.G,@Model.H,@Model.I,@Model.J,@Model.K,@Model.L, false);
+
+    @for (int i = 0; i < (Model.psol is null ? 0 : Model.psol.Length); i++)
+    {
+        @:draw_sol(@i, @Model.psol[i].T.Value1, @Model.psol[i].T.Value2, @Model.psol[i].T.Value3);
+    }
+    </script>
+}
+
