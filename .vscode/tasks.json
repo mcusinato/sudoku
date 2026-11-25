@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "process",
+      "command": "dotnet",
+      "windows": {
+        "command": "${env:USERPROFILE}\\.dotnet\\dotnet.exe"
+      },
+      "args": [
+        "build",
+        "${workspaceFolder}/icosudoku_gui.sln"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": "build"
+    }
+  ]
+}

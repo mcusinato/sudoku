@@ -1,0 +1,95 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug icosudoku",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/icosudoku/bin/Debug/netcoreapp3.1/icosudoku_gui.dll",
+      "cwd": "${workspaceFolder}/icosudoku",
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://localhost:5000"
+      },
+      "windows": {
+        "program": "${env:USERPROFILE}\\.dotnet\\dotnet.exe",
+        "args": [
+          "${workspaceFolder}/icosudoku/bin/Debug/netcoreapp3.1/icosudoku_gui.dll"
+        ],
+        "env": {
+          "ASPNETCORE_ENVIRONMENT": "Development",
+          "ASPNETCORE_URLS": "http://localhost:5000",
+          "DOTNET_ROOT": "${env:USERPROFILE}\\.dotnet",
+          "PATH": "${env:USERPROFILE}\\.dotnet;${env:PATH}"
+        }
+      }
+    },
+    {
+      "name": "Debug sudoku",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/sudoku/bin/Debug/netcoreapp3.1/sudoku_gui.dll",
+      "cwd": "${workspaceFolder}/sudoku",
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://localhost:5000"
+      },
+      "windows": {
+        "program": "${env:USERPROFILE}\\.dotnet\\dotnet.exe",
+        "args": [
+          "${workspaceFolder}/sudoku/bin/Debug/netcoreapp3.1/sudoku_gui.dll"
+        ],
+        "env": {
+          "ASPNETCORE_ENVIRONMENT": "Development",
+          "ASPNETCORE_URLS": "http://localhost:5000",
+          "DOTNET_ROOT": "${env:USERPROFILE}\\.dotnet",
+          "PATH": "${env:USERPROFILE}\\.dotnet;${env:PATH}"
+        }
+      }
+    },
+    {
+      "name": "Debug 100",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/100/bin/Debug/netcoreapp3.1/100_gui.dll",
+      "cwd": "${workspaceFolder}/100",
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://localhost:5000"
+      },
+      "windows": {
+        "program": "${env:USERPROFILE}\\.dotnet\\dotnet.exe",
+        "args": [
+          "${workspaceFolder}/100/bin/Debug/netcoreapp3.1/100_gui.dll"
+        ],
+        "env": {
+          "ASPNETCORE_ENVIRONMENT": "Development",
+          "ASPNETCORE_URLS": "http://localhost:5000",
+          "DOTNET_ROOT": "${env:USERPROFILE}\\.dotnet",
+          "PATH": "${env:USERPROFILE}\\.dotnet;${env:PATH}"
+        }
+      }
+    },
+    {
+      "name": "Debug ipranges",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/ipranges/bin/Debug/netcoreapp3.1/ipranges.dll",
+      "cwd": "${workspaceFolder}/ipranges",
+      "windows": {
+        "program": "${env:USERPROFILE}\\.dotnet\\dotnet.exe",
+        "args": [
+          "${workspaceFolder}/ipranges/bin/Debug/netcoreapp3.1/ipranges.dll"
+        ],
+        "env": {
+          "DOTNET_ROOT": "${env:USERPROFILE}\\.dotnet",
+          "PATH": "${env:USERPROFILE}\\.dotnet;${env:PATH}"
+        }
+      }
+    }
+  ]
+}
