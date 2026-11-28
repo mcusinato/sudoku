@@ -14,6 +14,56 @@
       ],
       "problemMatcher": "$msCompile",
       "group": "build"
+    },
+    {
+      "label": "Publish web apps to server",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/scripts/publish.ps1",
+        "-Version",
+        "${input:publishVersion}",
+        "-Server",
+        "${input:publishServer}",
+        "-User",
+        "${input:publishUser}",
+        "-KeyPath",
+        "${input:publishKey}",
+        "-HostKey",
+        "${input:publishHostKey}"
+      ],
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "publishVersion",
+      "type": "promptString",
+      "description": "Nuova versione (es. 0.2)"
+    },
+    {
+      "id": "publishServer",
+      "type": "promptString",
+      "description": "Indirizzo del server SSH"
+    },
+    {
+      "id": "publishUser",
+      "type": "promptString",
+      "description": "Utente SSH"
+    },
+    {
+      "id": "publishKey",
+      "type": "promptString",
+      "description": "Percorso completo della chiave PuTTY .ppk"
+    },
+    {
+      "id": "publishHostKey",
+      "type": "promptString",
+      "description": "Impronta SHA256 verificata della chiave SSH del server"
     }
   ]
 }

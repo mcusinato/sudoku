@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${workspaceFolder}/icosudoku/bin/Debug/netcoreapp3.1/icosudoku_gui.dll",
+      "program": "${workspaceFolder}/icosudoku/bin/Debug/net10.0/icosudoku_gui.dll",
       "cwd": "${workspaceFolder}/icosudoku",
       "env": {
         "ASPNETCORE_ENVIRONMENT": "Development",
@@ -15,7 +15,7 @@
       "windows": {
         "program": "${env:USERPROFILE}\\.dotnet\\dotnet.exe",
         "args": [
-          "${workspaceFolder}/icosudoku/bin/Debug/netcoreapp3.1/icosudoku_gui.dll"
+          "${workspaceFolder}/icosudoku/bin/Debug/net10.0/icosudoku_gui.dll"
         ],
         "env": {
           "ASPNETCORE_ENVIRONMENT": "Development",
@@ -30,7 +30,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${workspaceFolder}/sudoku/bin/Debug/netcoreapp3.1/sudoku_gui.dll",
+      "program": "${workspaceFolder}/sudoku/bin/Debug/net10.0/sudoku_gui.dll",
       "cwd": "${workspaceFolder}/sudoku",
       "env": {
         "ASPNETCORE_ENVIRONMENT": "Development",
@@ -39,7 +39,7 @@
       "windows": {
         "program": "${env:USERPROFILE}\\.dotnet\\dotnet.exe",
         "args": [
-          "${workspaceFolder}/sudoku/bin/Debug/netcoreapp3.1/sudoku_gui.dll"
+          "${workspaceFolder}/sudoku/bin/Debug/net10.0/sudoku_gui.dll"
         ],
         "env": {
           "ASPNETCORE_ENVIRONMENT": "Development",
@@ -54,7 +54,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${workspaceFolder}/100/bin/Debug/netcoreapp3.1/100_gui.dll",
+      "program": "${workspaceFolder}/100/bin/Debug/net10.0/100_gui.dll",
       "cwd": "${workspaceFolder}/100",
       "env": {
         "ASPNETCORE_ENVIRONMENT": "Development",
@@ -63,7 +63,7 @@
       "windows": {
         "program": "${env:USERPROFILE}\\.dotnet\\dotnet.exe",
         "args": [
-          "${workspaceFolder}/100/bin/Debug/netcoreapp3.1/100_gui.dll"
+          "${workspaceFolder}/100/bin/Debug/net10.0/100_gui.dll"
         ],
         "env": {
           "ASPNETCORE_ENVIRONMENT": "Development",
