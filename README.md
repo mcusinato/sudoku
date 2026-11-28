@@ -27,6 +27,4 @@ configuration uses the project directory so that it can read `config.json`.
 On Ubuntu the build task uses `dotnet` from PATH; install a compatible SDK and
 the .NET Core and ASP.NET Core 3.1 runtimes there as needed.
 
-The repository does not currently contain the web applications' `wwwroot`
-assets. In particular, icosudoku needs `wwwroot/js/site.js` for its board to
-render; the shared layouts also reference missing CSS and JavaScript libraries.
+The web applications' `wwwroot` assets are included for local development.

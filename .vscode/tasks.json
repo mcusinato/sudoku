@@ -10,7 +10,7 @@
       },
       "args": [
         "build",
-        "${workspaceFolder}/icosudoku_gui.sln"
+        "${workspaceFolder}/mkm.sln"
       ],
       "problemMatcher": "$msCompile",
       "group": "build"
